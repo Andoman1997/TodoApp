@@ -32,15 +32,24 @@ export const TodoList = () => {
 
 
   return (
+    <>
     <div className="todo-list">
       <span className="todo-list-title">Todos : 
-      <FontAwesomeIcon icon={faClipboardList} size="lg" />
-
+      <FontAwesomeIcon icon={faClipboardList} size="lg" color="green"/>
+          
      </span>
+         <select className='select'>
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+         </select>
 
       {todos.length ? (
         <div className="todo-list-content">
+        
+    
           {todos.map((todoItem) => (
+            
             <Checkbox
               key={todoItem.id}
               label={todoItem.label}
@@ -53,7 +62,9 @@ export const TodoList = () => {
         </div>
       ) : (
         <div className="no-todos">What shall we do today?!</div>
+        
       )}
     </div>
+  </>
   );
 };

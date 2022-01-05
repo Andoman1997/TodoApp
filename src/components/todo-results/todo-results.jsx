@@ -12,7 +12,7 @@ export const TodoResults = () => {
 
   return (
     <div className="todo-results">
-      Completed <FontAwesomeIcon icon={faCheckDouble} size="lg" /> : 
+      Completed <FontAwesomeIcon icon={faCheckDouble} size="lg" color="orange"/> : 
 
       {calculateChecked()}
     </div>

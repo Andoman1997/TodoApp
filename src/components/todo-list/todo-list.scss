@@ -2,7 +2,21 @@
   padding: 10px 0;
   border-bottom: 1px solid rgba(1,1,1,0.1);
   
-  
+  .select {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: #1e90ff;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    width: 110px;
+
+  }
 
   &-title {
     font-weight: 500;

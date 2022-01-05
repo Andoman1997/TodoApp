@@ -20,7 +20,7 @@ export  const Checkbox = ({
       <span className={checked ? 'checkbox-checked' : ''}>{label}</span>
     </div>
     <button type="button" className="checkbox-delete" onClick={onDelete}>
-    <FontAwesomeIcon icon={faBackspace} size="lg" />
+    <FontAwesomeIcon icon={faBackspace} size="lg" color="red" />
     </button>
   </div>
 );
