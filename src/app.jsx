@@ -11,6 +11,7 @@ export const App = () => {
   const [todos, setTodos] = React.useState(todosTemplate);
 
   React.useEffect(() => {
+    
     const raw = localStorage.getItem('todos') || []
     setTodos(JSON.parse(raw))
   }, [])
