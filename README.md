@@ -1,6 +1,6 @@
 React TodoApp created by Andoman97
 
-
+Project had created with Webpack config
 
 
 
